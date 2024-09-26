@@ -1,0 +1,304 @@
+/*Caja del login*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+
+
+.registrationBox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-40%);
+	width: 400px;
+	box-sizing: border-box;
+	background: transparent;
+	border-radius: 10px;
+	border: rgb(173, 110, 180) 8px outset;
+	transform: .5s;
+}
+
+.box1 {
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+	box-sizing: border-box;
+	background: rgba(255,255,255,.1);
+	border-radius: 5px;
+	transition: .5;
+	background-color:#F8ECE2;
+}
+.box2 {
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+	box-sizing: border-box;
+	background: rgba(255,255,255,.1);
+	border-radius: 5px;
+	transition: .5;
+	background-color:#f8ece26b;
+}
+
+.registrationBox input {
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: #C7E6E2;
+}
+
+.registrationBox2 input {
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: #C7E6E2;
+}
+
+/*Fondo principal*/
+.imgFondoGeneral{
+	background-image:url(img/fondoxd.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fija la imagen de fondo */
+  height: 100vh;
+}
+
+/*Botones*/
+.registroLink {
+    margin-top: 10px;
+}
+
+.registroLink p {
+    display: inline; 
+    margin-right: 10px; 
+}
+
+.botonGenerico {
+	background-color: #e863be;
+	border: #e863be 5px outset;
+	border-radius: 10px;
+  }
+.botonGenerico:hover {
+	background-color:  #422150; 
+	border: #422150 5px inset;
+}
+
+/* App.css */
+
+/* Estilos para el header */
+.navbar-brand img {
+    max-width: 100px;
+}
+
+.navbar-text {
+    color: #fff;
+    margin-left: 1000px;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #ccc;
+}
+
+/* Estilo para la imagen de perfil */
+.img-container img {
+	width: 400px; /* Ancho deseado */
+	height: 200px; /* Alto deseado */
+	object-fit: cover; /* Escala la imagen para cubrir el contenedor manteniendo su relación de aspecto */
+  }
+
+
+  /* boton circular homepage para agregar publicacion */
+  .circle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007bff; /* Cambia el color según tus preferencias */
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.circle-btn:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+.container-posts {
+	margin-top: 50px;
+	padding: 20px; /* Espaciado interno */
+	border: 1px solid #ccc; /* Borde sólido de color gris */
+	border-radius: 10px; /* Bordes redondeados */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+  
+/* perfil */
+
+.profile-container {
+	width: 400px; /* Ancho del contenedor */
+	margin: 50px auto; /* Margen superior e inferior automático y centrado horizontal */
+	padding: 20px; /* Espaciado interno */
+	border: 1px solid #ccc; /* Borde sólido de color gris */
+	border-radius: 10px; /* Bordes redondeados */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .profile-container h2 {
+	margin-bottom: 20px; /* Margen inferior */
+	text-align: center; /* Centrado horizontal */
+  }
+  
+  .profile-form {
+	max-width: 100%; /* Ancho máximo */
+  }
+  
+  .profile-form .form-group {
+	margin-bottom: 20px; /* Margen inferior */
+  }
+  
+  .profile-form label {
+	display: block; /* Mostrar como bloque */
+	font-weight: bold; /* Texto en negrita */
+  }
+  
+  .profile-form input[type="text"],
+  .profile-form input[type="email"],
+  .profile-form textarea {
+	width: 100%; /* Ancho completo */
+	padding: 10px; /* Espaciado interno */
+	border: 1px solid #ccc; /* Borde sólido de color gris */
+	border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  .profile-form textarea {
+	height: 100px; /* Altura del área de texto */
+  }
+  
+  .profile-form .img-container {
+	width: 100px; /* Ancho de la imagen */
+  }
+  
+  .profile-form img {
+	max-width: 100%; /* Ancho máximo */
+	height: auto; /* Altura automática */
+	border-radius: 5px; /* Bordes redondeados */
+  }
+  
+
+.profile-container {
+    width: 35%; /* Ancho del contenedor de perfil */
+	height: 100%;
+    /* Resto de tu estilo */
+}
+
+.posts-container {
+    width: 65%; /* Ancho del contenedor de posts */
+	height: 100%;
+    /* Resto de tu estilo */
+}
+
+/* App.css */
+.posts-fullscreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.posts-container {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+
+/* Estilos para las estrellas */
+.star {
+    font-size: 24px; /* Tamaño de la estrella */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las estrellas */
+}
+
+/* Estilos para las estrellas llenas */
+.filled {
+    color: gold; /* Color de las estrellas llenas */
+}
+
+/* CARDS*/
+
+.cardPost {
+  background-color:#DAC0DD;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.fondoDetrasCard{
+  background-color: #E8ABBD;
+}
+
+/*Fondo posts*/
+.imgFondo{
+	background-image:url(img/fondoxd.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fija la imagen de fondo */
+}
+/*quitar barra horizontal*/
+body {
+  overflow-x: hidden;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbarFondo{
+  background-color: #391f45;
+}
+
+/*fuente*/
+.negrita {
+  font-weight: bold;
+}
+
+.tamLetra{
+  font-size: 18px;
+}
+
+.titulos{
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/*Publicacion*/
+.cardPub {
+  margin: 10px;
+  background-color:#DAC0DD;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-top: 30px;
+  height: 500px;
+}
+.cardVerPub {
+  margin: 10px;
+  background-color:#DAC0DD;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.comentarioFondo{
+  background-color: #F6D5D3;
+}
+.textPurple, p{
+  color: #735182;
+}
+h2{
+  color:#422150;
+}
